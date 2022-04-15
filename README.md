@@ -1,1 +1,1 @@
-sebuah project website untuk perusahaan Usaha Mikro Kecil dan Menengah (UMKM) yang bernama "RUang Rasa"
+sebuah project website untuk perusahaan Usaha Mikro Kecil dan Menengah (UMKM) yang bernama "Ruang Rasa"
