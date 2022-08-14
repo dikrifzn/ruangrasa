@@ -79,7 +79,7 @@ header li a:hover{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url(img/Banner.jpg);
+    background-image: url(img/banner.jpg);
     background-size: cover;
     background-position: center;
     margin-bottom: 100px;
