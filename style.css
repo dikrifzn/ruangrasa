@@ -6,7 +6,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 html{
     scroll-behavior: smooth;
@@ -107,7 +107,7 @@ header li a:hover{
     padding: 10px;
     background-color: rgb(110, 0, 46);
     font-size: larger;
-    transition: 200ms;
+    transition: 500ms;
 }
 /* Section About */
 .about{
@@ -392,6 +392,8 @@ header li a:hover{
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 10px;
+        justify-items: center;
+        align-items: center;
     }
     .menu .content .box {
         width: 150px;
