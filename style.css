@@ -6,7 +6,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* border: 1px solid black; */
+    border: 1px solid black;
 }
 html{
     scroll-behavior: smooth;
@@ -152,7 +152,7 @@ header li a:hover{
     flex-wrap: wrap;
     margin-top: 40px;
 }
-.menu .content .menuTittle{
+.menu .menuTittle{
     width: 100%;
     text-align: center;
 }
@@ -369,7 +369,7 @@ header li a:hover{
         height: 250px;
         max-height: 100%;
         max-width: 100%;
-        margin: 20px;
+        margin: 20;
     }
     .menu .content .box h3{
         font-size: 1.2rem;
@@ -388,10 +388,15 @@ header li a:hover{
         font-size: 1em;
         text-align: justify;
     }
+    .menu .content{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
     .menu .content .box {
         width: 150px;
         height: 180px;
-        margin: 10px;
+        margin: 0;
     }
     .menu .content .box h3{
         font-size: 1rem;
