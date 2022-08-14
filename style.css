@@ -42,17 +42,23 @@ header .logoHeader a img{
 header .logoHeader.active{
     filter: invert(1);
 }
+header .navigation{
+    height: 100%;
+}
 header ul{
+    height: 100%;
     margin-right: 75px;
+    display: flex;
 }
 header ul.sticky{
     margin-right: 70px;
 }
 header li{
     list-style: none;
-    display: inline;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin: 10px;
-    padding: 5px;
 }
 header li a{
     text-decoration: none;
@@ -85,7 +91,7 @@ header li a:hover{
     color: white;
 }
 .banner .tittle h1{
-    font-size: 3em;
+    font-size: 4em;
 }
 .banner .btn{
     text-decoration: none;
@@ -95,6 +101,13 @@ header li a:hover{
     padding: 5px 6px;
     margin-top: 30px;
     border-radius: 5px;
+}
+.banner .btn:hover{
+    box-sizing: content-box;
+    padding: 10px;
+    background-color: rgb(110, 0, 46);
+    font-size: larger;
+    transition: 200ms;
 }
 /* Section About */
 .about{
@@ -108,6 +121,7 @@ header li a:hover{
 }
 .about h2{
     text-align: center;
+    margin-bottom: 20px;
 }
 .about img{
     width: 300px;
@@ -125,15 +139,11 @@ header li a:hover{
 /* Section Menu */
 .menu{
     width: 100%;
-    min-height: 100vh;
+    min-height: 100%;
     padding-top: 60px;
     padding-left: 75px;
     padding-right: 75px;
     font-family: 'Chelsea Market';
-}
-.menu .content .menuTittle{
-    width: 100%;
-    text-align: center;
 }
 .menu .content{
     display: flex;
@@ -142,45 +152,30 @@ header li a:hover{
     flex-wrap: wrap;
     margin-top: 40px;
 }
+.menu .content .menuTittle{
+    width: 100%;
+    text-align: center;
+}
 .menu .content .box{
-    width: 350px;
-    height: 350px;
+    width: 300px;
+    height: 320px;
     margin: 40px;
     padding: 15px;
     box-shadow: 0 10px 40px rgb(0, 0, 0, 0.2);
+    border-radius: 5px;
 }
 .menu .content .box .imageBox{
-    width: 300px;
-    height: 300px;
+    width: 250px;
+    height: 250px;
     margin: 5px;
     align-content: center;
+    border-radius: 5px;
 }
 .menu .content .box .imageBox img{
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
-
-/* section Testimoni */
-.testimoni{
-    width: 100%;
-    height: 100vh;
-    padding-top: 70px;
-    background-color: rgb(110, 0, 46);
-    font-family: 'Chelsea Market';
-}
-.testimoni .testtittle{
-    text-align: center;
-}
-.testimoni .testtittle h2{
-    color: white;
-}
-.testimoni .slider img{
-    height: 80vh;
-    margin: auto;
-    padding: auto;
-}
-
 /* Section Contact */
 .contact{
     width: 100%;
@@ -200,6 +195,7 @@ header li a:hover{
     max-width: 500px;
     margin: auto;
     margin-top: 35px;
+    margin-bottom: 75px;
 }
 .contact .inputBigBox .inputtittlebox{
     margin-bottom: 20px;
@@ -231,7 +227,18 @@ header li a:hover{
     max-width: 100px;
     font-weight: 500;
     border: none;
+    border-radius: 5px;
     cursor: pointer;
+}
+.contact .inputBigBox .socialMedia{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+.contact .inputBigBox .socialMedia ul{
+    margin: 0;
+    padding: 0;
 }
 .contact .inputBigBox .socialMedia li{
     list-style: none;
@@ -241,6 +248,15 @@ header li a:hover{
     width: 25px;
     height: 25px;
     margin: 10px;
+    box-sizing: content-box;
+}
+.contact .inputBigBox .socialMedia li a img:hover{
+    width: 40px;
+    height: 40px;
+    margin: 0;
+    margin-right: 10px;
+    margin-left: 10px;
+    transition: 300ms;
 }
 
 /* Section Copyright */
@@ -252,6 +268,8 @@ header li a:hover{
 }
 .copyrightText p{
     color: #111;
+    padding: 0;
+    margin: 0;
 }
 .copyrightText a{
     color: #111;
@@ -288,6 +306,7 @@ header li a:hover{
         color: black;
         margin-left: 0;
         margin-right: 0;
+        padding: 0;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -342,14 +361,18 @@ header li a:hover{
         padding-right: 20px;
     }
     .menu .content .box {
-        width: 300px;
-        height: 300px;
+        width: 230px;
+        height: 250px;
         max-height: 100%;
         max-width: 100%;
+        margin: 20px;
+    }
+    .menu .content .box h3{
+        font-size: 1.2rem;
     }
     .menu .content .box .imageBox {
-        width: 250px;
-        height: 250px;
+        width: 190px;
+        height: 190px;
     }
     .contact .inputBigBox {
         max-width: 400px;
