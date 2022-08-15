@@ -5,10 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ruangrasa</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-    <script src="javascript.js"></script>
     <script src="bootstrap/js/bootstrap.bundle.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="javascript.js"></script>
 </head>
 <body>
     <header>
@@ -84,25 +85,36 @@
         </div>
     </section>
     <section class="contact" id="contact">
-        <div class="inputtittle">
+    <div class="inputtittle">
             <h2>Contact Us</h2>
         </div>
-        <div class="inputBigBox">
-            <div class="inputtittlebox">
-                <h2>Send Massage</h2>
-            </div>
-            <div class="inputBox">
-            <input type="text" placeholder="Nama">
-            </div>
-            <div class="inputBox">
-                <input type="email" placeholder="Email">
-            </div>
-            <div class="inputBox">
-                <textarea placeholder="Sampaikan Sesuatu"></textarea>
-            </div>
-            <div class="inputBox">
-                <input type="submit" value="Kirim">
-            </div>
+        <form method="post" action="action/data_create.php">
+            <div class="inputBigBox">
+                <div class="inputtittlebox">
+                    <h2>Send Massage</h2>
+                </div>
+                <div class="inputBox">
+                <div class="form-floating mb-3">
+                        <input name="nama" value="" type="text" class="form-control" id="floatingInput" placeholder="Nama Lengkap" required>
+                        <label for="floatingInput">Nama Lengkap</label>
+                    </div>
+                </div>
+                <div class="inputBox">
+                    <div class="form-floating mb-3">
+                        <input name="email" value="" type="email" class="form-control" id="floatingInput" placeholder="nama@contoh.com" required>
+                        <label for="floatingInput">Email</label>
+                    </div>
+                </div>
+                <div class="inputBox">
+                    <div class="form-floating">
+                        <textarea name="pesan" value="" class="form-control" placeholder="Pesan yang ingin disampaikan" id="floatingTextarea" required></textarea>
+                        <label for="floatingTextarea">Pesan</label>
+                    </div>
+                </div>
+                <div class="inputBox">
+                    <button type="submit" class="btn btn-primary">Kirim</button>
+                </div>
+        </form>
             <div class="socialMedia">
                 <ul>
                     <li>

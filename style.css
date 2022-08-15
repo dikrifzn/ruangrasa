@@ -209,31 +209,15 @@ header li a:hover{
     width: 100%;
     margin-bottom: 20px;
 }
-.contact .inputBigBox .inputBox input,
-.contact .inputBigBox .inputBox textarea{
+.contact .inputBigBox .inputBox .form-floating #floatingTextarea{
+    height: 150px;
+}
+.contact .inputBigBox .inputBox .btn-primary{
+    background: rgba(110, 0, 46);
+    border: 0;
     width: 100%;
-    border: 1px solid #555;
-    padding: 10px;
-    color: #111;
-    outline: none;
-    font-weight: 300;
-    resize: none;
 }
-.contact .inputBigBox .inputBox input[type="submit"]{
-    font-size: 1em;
-    color: #fff;
-    background-color: rgb(110, 0, 46);
-    display: inline-block;
-    text-transform: uppercase;
-    text-decoration: none;
-    letter-spacing: 2px;
-    transition: 0.5s;
-    max-width: 100px;
-    font-weight: 500;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
+
 .contact .inputBigBox .socialMedia{
     margin: 0;
     padding: 0;
